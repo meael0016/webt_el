@@ -21,11 +21,11 @@
 			</div>
 			<div class="formulario">
 				<img src="img/logo.JPEG">
-				<input type="text" name="nombre" id="nombre" placeholder="Nombre">
-				<input type="gmail" name="gmail" id="gmail" placeholder="Gmail">
-				<input type="text" name="asunto" id="asunto" placeholder="Asunto">
-				<textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
-				<input type="submit" name="boton" id="boton">
+				<input type="text" name="nombre"  placeholder="Nombre">
+				<input type="gmail" name="gmail"  placeholder="Gmail">
+				<input type="text" name="asunto"  placeholder="Asunto">
+				<textarea name="mensaje" placeholder="Mensaje"></textarea>
+				<input type="submit" name="boton" >
 			</div>
 		</form>
 		<?php

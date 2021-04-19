@@ -1,21 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Enviar mensaje GMAIL</title>
-	<link rel='stylesheet' type='text/css' href='css/formulario.css'>
-</head>
-<body>
-		<form method="post" id="form" enctype="multipart/form-data">
-			<div class="formulario">
-				<img src="img/logo.JPEG">
-				<input type="text" name="nombre" id="nombre" placeholder="Nombre">
-				<input type="gmail" name="gmail" id="gmail" placeholder="Gmail">
-				<input type="text" name="asunto" id="asunto" placeholder="Asunto">
-				<textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
-				<input type="submit" name="boton" id="boton">
-			</div>
-		</form>
-		<?php
+<?php
 	if (isset($_POST["boton"])) {
 		if (!empty($_POST["nombre"]) && !empty($_POST["gmail"]) && !empty($_POST["asunto"]) && !empty($_POST["mensaje"])) {
 
@@ -37,6 +23,5 @@
 	}
 
 ?>
-</body>
-</html>
+
 

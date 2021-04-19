@@ -15,10 +15,7 @@
 				<input type="submit" name="boton" id="boton">
 			</div>
 		</form>
-</body>
-</html>
-
-<?php
+		<?php
 	if (isset($_POST["boton"])) {
 		if (!empty($_POST["nombre"]) && !empty($_POST["gmail"]) && !empty($_POST["asunto"]) && !empty($_POST["mensaje"])) {
 
@@ -40,3 +37,6 @@
 	}
 
 ?>
+</body>
+</html>
+

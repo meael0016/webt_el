@@ -5,7 +5,7 @@
 	<link rel='stylesheet' type='text/css' href='css/formulario.css'>
 </head>
 <body>
-		<form method="post" id="form" >
+		<form method="post" id="form" enctype="multipart/form-data">
 			<div class="formulario">
 				<img src="img/logo.JPEG">
 				<input type="text" name="nombre" id="nombre" placeholder="Nombre">

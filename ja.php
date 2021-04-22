@@ -1,5 +1,5 @@
 <?php 
-	if (isset($_GET["boton"])) {
+	if (isset($_POST["boton"])) {
 		echo "ya funsina";
 	}
 ?>

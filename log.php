@@ -6,7 +6,7 @@
 			$mensaje=$_POST["mensaje"];
 			$header="From: meaelsilva@gmail.com";
 			$header.="Reply-To: meaelsilva@gmail.com";
-			$header.="X.Mailer= PHP/". phpversion();
+			$header.="X-Mailer: PHP/". phpversion();
 			$mail=mail($gmail,$asunto,$mensaje,$header);
 		}
 		if ($mail) {

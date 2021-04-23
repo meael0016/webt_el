@@ -7,7 +7,7 @@
 			$header="From: meaelsilva@gmail.com";
 			$header.="Reply-To: meaelsilva@gmail.com";
 			$header.="X-Mailer: PHP/". phpversion();
-			$mail=mail($gmail,$asunto,$mensaje,$header);
+			$mail=@mail($gmail,$asunto,$mensaje,$header);
 		}
 		if ($mail) {
 			echo "<h3>sea enviado</h3";

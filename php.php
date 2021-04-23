@@ -1,20 +1,18 @@
 <?php
-	if (isset($POST["boton"])) {
-		if (!empty($POST["nombre"]) && !empty($POST["gmail"]) && !empty($POST["asunto"]) && !empty($POST["mensaje"])) {
-			$name=$POST["nombre"];
-			$gmail=$POST["gmail"];
-			$asunto=$POST["asunto"];
-			$mensaje=$POST["mensaje"];
+	if (isset($_POST["boton"])) {
+		if (!empty($_POST["nombre"]) && !empty($_POST["gmail"]) && !empty($_POST["asunto"]) && !empty($_POST["mensaje"])) {
+			$gmail=$_POST["gmail"];
+			$asunto=$_POST["asunto"];
+			$mensaje=$_POST["mensaje"];
 			$header="From: meaelsilva@gmail.com";
-			$header.="Reply-to: meaelsilva@gmail.com ";
+			$header.="Reply-To: meaelsilva@gmail.com ";
 			$header.="X.Mailer= PHP/". phpversion();
 			$mail=mail($gmail,$asunto,$mensaje,$header);
-			if ($mail) {
-				echo "se mando";
-			}else{
-				echo "no se mando";
-			}
-
+		}
+		if ($mail) {
+			echo "<h3>sea enviado</h3";
+		}else{
+			echo "<h3>no sea enviado</h3>";
 		}
 		
 	}

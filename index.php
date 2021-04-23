@@ -28,9 +28,7 @@
 				<input type="submit" name="boton" id="boton" >
 			</div>
 		</form>	
-		<?php
-			include("log.php");
-		?>
+		
 
 	
 		
@@ -108,3 +106,6 @@
 			<p>Contamos con algunos articulos para tus fiestas.</p>
 		</div>	
 	</div>
+		<?php
+			include("log.php");
+		?>

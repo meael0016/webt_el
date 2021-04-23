@@ -106,6 +106,9 @@
 			<p>Contamos con algunos articulos para tus fiestas.</p>
 		</div>	
 	</div>
-		<?php
+	<?php
 			include("log.php");
-		?>
+	?>
+	<script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
